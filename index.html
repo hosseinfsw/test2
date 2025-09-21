@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/output_tailwind.css" />
+    <link rel="stylesheet" href="font.css" />
+    <link rel="stylesheet" href="./css/mine.css" />
+    <link rel="stylesheet" href="animishen/aos.css" />
+  </head>
+  <body class="bg-[#0f0715]" dir="rtl">
+   <header class="w-screen px-4 md:px-9 py-5 text-white">
+      <div class="max-w-[1180px] flex justify-between items-center mx-auto">
+        <!-- لوگو -->
+        <div class="text-[#1E88E5] text-xl font-bold md:text-left text-center">
+          <p class="text-[#1E88E5]">
+            wa<span class="text-[#8750F7]">beta</span>
+          </p>
+        </div>
+
+        <!-- منو -->
+        <nav class="relative">
+          <div class="flex justify-between items-center">
+            <!-- آیکون همبرگر برای موبایل -->
+            <button
+              id="menu-toggle"
+              class="text-white md:hidden focus:outline-none"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+
+            <!-- منو اصلی دسکتاپ -->
+            
+            <ul class="hidden md:flex gap-7">
+              <li>
+                <a href="#" class="menu-link text-[#D3BDFF] transition-colors"
+                  >صفحه اصلی</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="menu-link hover:text-[#e72828] transition-colors"
+                  >نمونه کارها</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="menu-link hover:text-[#e72828] transition-colors"
+                  >خدمات</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="menu-link hover:text-[#e72828] transition-colors"
+                  >مهارت ها</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="menu-link hover:text-[#e72828] transition-colors"
+                  >تماس با ما</a
+                >
+              </li>
+            </ul>
+            <!-- عنصر نشانگر -->
+            <div
+              class="menu-items-indicator absolute bottom-[-5px] left-0 h-[2px] w-0 bg-gradient-to-r from-[#140A1E00] to-[#8750F7] transition-all duration-300"
+            ></div>
+          </div>
+
+          <!-- منوی موبایل -->
+<ul id="mobile-menu"
+    class="fixed top-0 right-0 h-screen w-64 bg-[#140A1E] shadow-lg p-4 flex flex-col gap-4 transform translate-x-full opacity-0 z-50">
+  <li><a href="#" class="text-[#D3BDFF] hover:text-[#e72828] block">صفحه اصلی</a></li>
+  <li><a href="#" class="hover:text-[#e72828] block">نمونه کارها</a></li>
+  <li><a href="#" class="hover:text-[#e72828] block">خدمات</a></li>
+  <li><a href="#" class="hover:text-[#e72828] block">مهارت ها</a></li>
+  <li><a href="#" class="hover:text-[#e72828] block">تماس با ما</a></li>
+   <a
+            href="logo/logotype.svg"
+            download
+            class="text-white rounded-[50px] px-5 pt-2 pb-2 text-center shadow-lg flex items-center gap-1 hover:shadow-xl transition-shadow"
+            style="
+              background-image: linear-gradient(
+                90deg,
+                #2d1f49 0%,
+                #8750f7 100%
+              );
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+              />
+            </svg>
+            دانلود روزمه
+          </a>
+</ul>
+
+          
+        </nav>
+
+        <!-- دکمه دانلود روزمه -->
+        <div class="hidden md:flex">
+          <a
+            href="logo/logotype.svg"
+            download
+            class="text-white rounded-[50px] px-5 pt-2 pb-2 text-center shadow-lg flex items-center gap-1 hover:shadow-xl transition-shadow"
+            style="
+              background-image: linear-gradient(
+                90deg,
+                #2d1f49 0%,
+                #8750f7 100%
+              );
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"
+              />
+            </svg>
+            دانلود روزمه
+          </a>
+        </div>
+      </div>
+    </header>
+   <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+  class="mt-12 flex flex-col-reverse sm:flex-col-reverse md:flex-row items-center gap-8 sm:gap-10 md:gap-20 lg:gap-32 px-4 sm:px-5 md:px-8 lg:px-12"
+  style="background-image: radial-gradient(at center center, #8750f729 0%, #2d1f4900 51%);"
+>
+  <!-- متن معرفی -->
+  <div class="w-full sm:w-full md:w-7/12 lg:w-6/12 text-white flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-8">
+    <!-- عنوان -->
+    <h2 class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-black">من حسین هستم</h2>
+
+    <!-- تایپ‌رایتر -->
+    <div class="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-black text-[#C4B7DF]">
+      <span id="typewriter"></span><span class="cursor">|</span>
+    </div>
+
+    <!-- توضیحات -->
+    <div class="text-base sm:text-lg md:text-lg lg:text-lg">
+      <p>
+        فردی پرشور و مشتاق به تعامل با افراد مختلف هستم. بیش از ۸ سال
+        سابقه فعالیت در زمینه دیجیتال مارکتینگ و همچنین بخش خدمات مشتریان
+        در صنعت خرده‌فروشی آنلاین و زیرساخت‌های اینترنتی را دارم.
+      </p>
+    </div>
+
+    <!-- دکمه‌ها و آیکون‌ها -->
+    <div class="flex flex-wrap items-center gap-3 sm:gap-4 md:gap-4 lg:gap-5">
+      <!-- دکمه دانلود پورتفولیو -->
+      <a
+        href="logo/logotype.svg"
+        download
+        class="text-white rounded-[50px] px-4 sm:px-5 md:px-5 lg:px-5 py-2 flex items-center shadow-lg hover:shadow-xl transition-shadow"
+        style="background-image: linear-gradient(90deg, #2d1f49 0%, #8750f7 100%);"
+      >
+        دانلود پورتفولیو
+      </a>
+
+      <!-- آیکون اول -->
+      <div
+        class="w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center border border-[#8750f7] rounded-full cursor-pointer hover:bg-[#8750f720] transition-colors"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 sm:w-6 h-5 sm:h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="#8750f7"
+          stroke-width="1.5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
+          />
+        </svg>
+      </div>
+
+      <!-- آیکون دوم -->
+      <div
+        class="w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center border border-[#8750f7] rounded-full cursor-pointer hover:bg-[#8750f720] transition-colors"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 sm:w-6 h-5 sm:h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="#8750f7"
+          stroke-width="1.5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636m12.728 12.728L5.636 5.636"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- تصویر -->
+  <div class="w-full sm:w-full md:w-[493px] lg:w-[493px] flex justify-center">
+    <img
+      class="w-full h-auto max-w-[493px]"
+      src="./assets/images/190daee716ec7f428b95bc65676d8357-1024x1024 (1).webp"
+      alt="تصویر حسین"
+      loading="lazy"
+    />
+  </div>
+</section>
+
+ <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+  <!-- کارت 1: سال تجربه -->
+  <div class="flex gap-4 items-start">
+    <span class="count-up text-4xl md:text-5xl lg:text-6xl font-black" data-target="12">0</span>
+    <div class="flex flex-col">
+      <span class="text-lg md:text-lg font-semibold">سال</span>
+      <span class="text-base md:text-base text-gray-300">تجربه کاری</span>
+    </div>
+  </div>
+
+  <!-- کارت 2: پروژه -->
+  <div class="flex gap-4 items-start">
+    <span class="count-up text-4xl md:text-5xl lg:text-6xl font-black" data-target="500">0</span>
+    <div class="flex flex-col">
+      <span class="text-lg md:text-lg font-semibold">پروژه</span>
+      <span class="text-base md:text-base text-gray-300">انجام شده</span>
+    </div>
+  </div>
+
+  <!-- کارت 3: رضایت مشتری -->
+  <div class="flex gap-4 items-start">
+    <span class="count-up text-4xl md:text-5xl lg:text-6xl font-black" data-target="1500">0</span>
+    <div class="flex flex-col">
+      <span class="text-lg md:text-lg font-semibold">رضایت</span>
+      <span class="text-base md:text-base text-gray-300">مشتری</span>
+    </div>
+  </div>
+
+  <!-- کارت 4: مشاوره -->
+  <div class="flex gap-4 items-start">
+    <span class="count-up text-4xl md:text-5xl lg:text-6xl font-black" data-target="2000">0</span>
+    <div class="flex flex-col">
+      <span class="text-lg md:text-lg font-semibold">مشاوره</span>
+      <span class="text-base md:text-base text-gray-300">و منتورینگ</span>
+    </div>
+  </div>
+</div>
+
+      <div class="mt-32 flex flex-col items-center text-center gap-4">
+        <h2
+          class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#C4B7DF] to-[#8750F7]"
+        >
+          مهارت های من
+        </h2>
+
+        <p class="text-gray-300 max-w-[600px]">
+          و کماکان در جستجوی دانش های جدید، حتی اگر در ثریا باشد...
+        </p>
+
+        <!-- کارت‌ها -->
+        <div
+          class="mt-8 w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 justify-items-center"
+        >
+          <!-- کارت نمونه -->
+          <div
+            class="flex flex-col items-center gap-2"
+            data-aos="fade-up"
+            data-aos-duration="4000"
+          >
+            <div
+              class="w-[140px] sm:w-[150px] md:w-[230px] lg:w-[170px] h-[160px] sm:h-[170px] md:h-[180px] lg:h-[190px] flex flex-col items-center justify-between mb-2 bg-[#180E22] rounded-2xl p-3 sm:p-4 md:p-4 border-2 border-transparent hover:border-[#8750f7] hover:bg-[#8750F729] transition-all duration-300"
+            >
+              <img
+                src="./assets/icons/06e5ea13758d45ed6b9d97f825902549.png"
+                class="w-16 sm:w-20 md:w-20 lg:w-20"
+                alt="آیکون"
+                loading="lazy"
+              />
+              <span
+                class="text-white text-lg sm:text-xl md:text-2xl lg:text-2xl font-extrabold tracking-wide"
+                >۱۰۰٪</span
+              >
+            </div>
+            <p class="text-base sm:text-lg md:text-xl lg:text-xl text-center">
+              WordPress
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-2"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
+            <div
+              class="w-[140px] sm:w-[150px] md:w-[230px] lg:w-[170px] h-[160px] sm:h-[170px] md:h-[180px] lg:h-[190px] flex flex-col items-center justify-between mb-2 bg-[#180E22] rounded-2xl p-3 sm:p-4 md:p-4 border-2 border-transparent hover:border-[#8750f7] hover:bg-[#8750F729] transition-all duration-300"
+            >
+              <img
+                src="./assets/icons/36e915dfd895a7cc26af533ff0806c2c.png"
+                class="w-16 sm:w-20 md:w-20 lg:w-20"
+                alt="آیکون"
+                loading="lazy"
+              />
+              <span
+                class="text-white text-lg sm:text-xl md:text-2xl lg:text-2xl font-extrabold tracking-wide"
+                >۹۵٪</span
+              >
+            </div>
+            <p class="text-base sm:text-lg md:text-xl lg:text-xl text-center">
+              React
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-2"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div
+              class="w-[140px] sm:w-[150px] md:w-[230px] lg:w-[170px] h-[160px] sm:h-[170px] md:h-[180px] lg:h-[190px] flex flex-col items-center justify-between mb-2 bg-[#180E22] rounded-2xl p-3 sm:p-4 md:p-4 border-2 border-transparent hover:border-[#8750f7] hover:bg-[#8750F729] transition-all duration-300"
+            >
+              <img
+                src="./assets/icons/dc700c09de8abd385fdab0e9034e28be.png"
+                class="w-16 sm:w-20 md:w-20 lg:w-20"
+                alt="آیکون"
+                loading="lazy"
+              />
+              <span
+                class="text-white text-lg sm:text-xl md:text-2xl lg:text-2xl font-extrabold tracking-wide"
+                >۸۰٪</span
+              >
+            </div>
+            <p class="text-base sm:text-lg md:text-xl lg:text-xl text-center">
+              Sketch
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-2"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
+            <div
+              class="w-[140px] sm:w-[150px] md:w-[230px] lg:w-[170px] h-[160px] sm:h-[170px] md:h-[180px] lg:h-[190px] flex flex-col items-center justify-between mb-2 bg-[#180E22] rounded-2xl p-3 sm:p-4 md:p-4 border-2 border-transparent hover:border-[#8750f7] hover:bg-[#8750F729] transition-all duration-300"
+            >
+              <img
+                src="./assets/icons/91434b4bd3922dfffd2d6f30484e7c56.png"
+                class="w-16 sm:w-20 md:w-20 lg:w-20"
+                alt="آیکون"
+                loading="lazy"
+              />
+              <span
+                class="text-white text-lg sm:text-xl md:text-2xl lg:text-2xl font-extrabold tracking-wide"
+                >۷۵٪</span
+              >
+            </div>
+            <p class="text-base sm:text-lg md:text-xl lg:text-xl text-center">
+              AdobeXD
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-2"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div
+              class="w-[140px] sm:w-[150px] md:w-[230px] lg:w-[170px] h-[160px] sm:h-[170px] md:h-[180px] lg:h-[190px] flex flex-col items-center justify-between mb-2 bg-[#180E22] rounded-2xl p-3 sm:p-4 md:p-4 border-2 border-transparent hover:border-[#8750f7] hover:bg-[#8750F729] transition-all duration-300"
+            >
+              <img
+                src="./assets/icons/a3ac44f634c1058e6240ef37f4c81451.png"
+                class="w-16 sm:w-20 md:w-20 lg:w-20"
+                alt="آیکون"
+                loading="lazy"
+              />
+              <span
+                class="text-white text-lg sm:text-xl md:text-2xl lg:text-2xl font-extrabold tracking-wide"
+                >۶۵٪</span
+              >
+            </div>
+            <p class="text-base sm:text-lg md:text-xl lg:text-xl text-center">
+              JavaScript
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col items-center gap-2"
+            data-aos="fade-down"
+            data-aos-duration="2000"
+          >
+            <div
+              class="w-[140px] sm:w-[150px] md:w-[230px] lg:w-[170px] h-[160px] sm:h-[170px] md:h-[180px] lg:h-[190px] flex flex-col items-center justify-between mb-2 bg-[#180E22] rounded-2xl p-3 sm:p-4 md:p-4 border-2 border-transparent hover:border-[#8750f7] hover:bg-[#8750F729] transition-all duration-300"
+            >
+              <img
+                src="./assets/icons/e11356bfe715006532771c362c22aad0.png"
+                class="w-16 sm:w-20 md:w-20 lg:w-20"
+                alt="آیکون"
+                loading="lazy"
+              />
+              <span
+                class="text-white text-lg sm:text-xl md:text-2xl lg:text-2xl font-extrabold tracking-wide"
+                >۶۵٪</span
+              >
+            </div>
+            <p class="text-base sm:text-lg md:text-xl lg:text-xl text-center">
+              Figma
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-44">
+        <div class="flex flex-col justify-center items-center">
+          <h2
+            class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#C4B7DF] to-[#8750F7]"
+          >
+            نمونه کارهای من
+          </h2>
+
+          <p class="text-gray-300">پروژه هایی که تاکنون انجام داده ام...</p>
+        </div>
+
+        <!-- دکمه‌ها -->
+        <div
+          id="filterButtons"
+          class="flex justify-center flex-wrap mb-8 mt-8 gap-4"
+        >
+          <button
+            data-category="all"
+            class="filter-btn text-white rounded-[50px] px-5 py-2 shadow-lg active"
+          >
+            همه
+          </button>
+          <button
+            data-category="app"
+            class="filter-btn text-white rounded-[50px] px-5 py-2 shadow-lg"
+          >
+            طراحی اپلیکیشن
+          </button>
+          <button
+            data-category="web"
+            class="filter-btn text-white rounded-[50px] px-5 py-2 shadow-lg"
+          >
+            طراحی وبسایت
+          </button>
+          <button
+            data-category="uiux"
+            class="filter-btn text-white rounded-[50px] px-5 py-2 shadow-lg"
+          >
+            UI/UX
+          </button>
+        </div>
+
+        <!-- شبکه نمونه‌کارها -->
+        <!-- شبکه نمونه‌کارها -->
+        <div id="portfolio" class="flex flex-wrap -mx-3 justify-center">
+          <!-- اپلیکیشن -->
+          <div
+            class="card item app show px-3 mb-6"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
+            <span
+              class="absolute top-3 right-3 bg-[#8750f7] text-white text-xs px-3 py-1 rounded-lg shadow-md"
+              >اپلیکیشن</span
+            >
+            <img
+              src="./assets/images/90053bcad98b87674c0a3cf6423409d2.jpeg"
+              class="w-full h-full object-cover rounded-xl"
+              loading="lazy"
+            />
+            <div
+              class="overlay absolute left-1/2 -translate-x-1/2 w-[90%] bg-[#1a1c24]/90 backdrop-blur-md px-4 py-4 rounded-xl"
+            >
+              <div class="flex justify-between items-center">
+                <div>
+                  <h3 class="text-lg font-bold">طراحی اپلیکیشن خبری</h3>
+                  <p class="text-sm opacity-80">سایت میهن خبر</p>
+                </div>
+                <div class="flex gap-2">
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-[#8750f7] hover:bg-[#6a28f7]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card item app show px-3 mb-6"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <span
+              class="absolute top-3 right-3 bg-[#8750f7] text-white text-xs px-3 py-1 rounded-lg shadow-md"
+              >اپلیکیشن</span
+            >
+            <img
+              src="./assets/images/8bd62a252e295accf8236ca5afd37f14.jpeg"
+              class="w-full h-full object-cover rounded-xl"
+              loading="lazy"
+            />
+            <div
+              class="overlay absolute left-1/2 -translate-x-1/2 w-[90%] bg-[#1a1c24]/90 backdrop-blur-md px-4 py-4 rounded-xl"
+            >
+              <div class="flex justify-between items-center">
+                <div>
+                  <h3 class="text-lg font-bold">طراحی اپلیکیشن فروشگاهی</h3>
+                  <p class="text-sm opacity-80">اپلیکیشن فروش آنلاین</p>
+                </div>
+                <div class="flex gap-2">
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-[#8750f7] hover:bg-[#6a28f7]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- وبسایت -->
+          <div
+            class="card item web show px-3 mb-6"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
+            <span
+              class="absolute top-3 right-3 bg-[#8750f7] text-white text-xs px-3 py-1 rounded-lg shadow-md"
+              >وبسایت</span
+            >
+            <img
+              src="./assets/images/b0a7da7b9f485ed807d73c02f5f1f1a5.jpeg"
+              class="w-full h-full object-cover rounded-xl"
+              loading="lazy"
+            />
+            <div
+              class="overlay absolute left-1/2 -translate-x-1/2 w-[90%] bg-[#1a1c24]/90 backdrop-blur-md px-4 py-4 rounded-xl"
+            >
+              <div class="flex justify-between items-center">
+                <div>
+                  <h3 class="text-lg font-bold">طراحی سایت فروشگاهی</h3>
+                  <p class="text-sm opacity-80">فروشگاه آنلاین</p>
+                </div>
+                <div class="flex gap-2">
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-[#8750f7] hover:bg-[#6a28f7]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card item web show px-3 mb-6"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
+            <span
+              class="absolute top-3 right-3 bg-[#8750f7] text-white text-xs px-3 py-1 rounded-lg shadow-md"
+              >وبسایت</span
+            >
+            <img
+              src="./assets/images/5105ed3c23175d04e6992815f940c53c.jpeg"
+              class="w-full h-full object-cover rounded-xl"
+              loading="lazy"
+            />
+            <div
+              class="overlay absolute left-1/2 -translate-x-1/2 w-[90%] bg-[#1a1c24]/90 backdrop-blur-md px-4 py-4 rounded-xl"
+            >
+              <div class="flex justify-between items-center">
+                <div>
+                  <h3 class="text-lg font-bold">طراحی سایت شرکتی</h3>
+                  <p class="text-sm opacity-80">سایت شرکت‌ها</p>
+                </div>
+                <div class="flex gap-2">
+                  <a
+                    href="#"
+                    class="w-10 h-10 flex items-center justify-center rounded-full bg-[#8750f7] hover:bg-[#6a28f7]"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5 text-white"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-24">
+        <div
+          class="flex flex-col mx-auto mt-12 md:mt-16 justify-center items-center text-center"
+        >
+          <h2
+            class="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#C4B7DF] to-[#8750F7]"
+          >
+            سوابق شغلی من
+          </h2>
+          <p class="text-gray-400 mb-6 md:mb-10 max-w-xl">
+            تا الان چه کارهایی انجام داده‌ام...
+          </p>
+        </div>
+
+        <div
+          class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+        >
+          <!-- تصویر سمت چپ -->
+          <div class="relative flex justify-center items-center">
+            <img
+              src="./assets/images/78534s98f4gdf65g42-901x1024.webp"
+              alt="profile"
+              class="relative w-[420px] rounded-2xl shadow-lg z-10 animate-fadeIn"
+              loading="lazy"
+            />
+
+            <!-- المان بالا سمت راست -->
+            <div class="absolute -top-6 right-0 opacity-70 animate-pulse">
+              <img src="./assets/icons/lines-1.webp" alt="" loading="lazy" />
+            </div>
+
+            <!-- المان پایین سمت چپ -->
+            <div class="absolute -bottom-6 left-0 opacity-70 animate-pulse">
+              <img src="./assets/icons/lines-1.webp" alt="" loading="lazy" />
+            </div>
+          </div>
+
+          <!-- تایم‌لاین سمت راست -->
+          <div>
+            <ul class="timeline-list space-y-2">
+              <!-- آیتم 1 -->
+              <li class="timeline-item group">
+                <div class="timeline-marker"></div>
+                <div
+                  class="transition-all duration-300 ease-in-out group-hover:scale-[1.02] group-hover:shadow-lg p-4 rounded-lg"
+                >
+                  <h4
+                    class="text-sm text-gray-400 group-hover:text-purple-400 transition-colors duration-300"
+                  >
+                    سال 1389 تاکنون
+                  </h4>
+                  <span
+                    class="inline-block text-xs px-3 py-1 bg-purple-600 rounded-md mt-1 group-hover:bg-purple-500 transition-all duration-300"
+                    >فعالیت شخصی</span
+                  >
+                  <h3
+                    class="text-xl font-bold mt-2 group-hover:text-white transition-colors duration-300"
+                  >
+                    شروع مسیر طراحی گرافیک
+                  </h3>
+                  <p
+                    class="text-gray-400 leading-relaxed mt-2 group-hover:text-gray-100 transition-colors duration-300"
+                  >
+                    در این دوره، با اصول طراحی و نرم‌افزارهای گرافیکی آشنا شدم و
+                    پروژه‌های کوچک شخصی را شروع کردم.
+                  </p>
+                </div>
+              </li>
+
+              <!-- آیتم 2 -->
+              <li class="timeline-item group">
+                <div class="timeline-marker"></div>
+                <div
+                  class="transition-all duration-300 ease-in-out group-hover:scale-[1.02] group-hover:shadow-lg p-4 rounded-lg"
+                >
+                  <h4
+                    class="text-sm text-gray-400 group-hover:text-purple-400 transition-colors duration-300"
+                  >
+                    سال 1400 تاکنون
+                  </h4>
+                  <span
+                    class="inline-block text-xs px-3 py-1 bg-purple-600 rounded-md mt-1 group-hover:bg-purple-500 transition-all duration-300"
+                    >آژانس تبلیغات</span
+                  >
+                  <h3
+                    class="text-xl font-bold mt-2 group-hover:text-white transition-colors duration-300"
+                  >
+                    مدیر مارکتینگ و طراحی
+                  </h3>
+                  <p
+                    class="text-gray-400 leading-relaxed mt-2 group-hover:text-gray-100 transition-colors duration-300"
+                  >
+                    مدیریت تیم طراحی و بازاریابی دیجیتال، توسعه کمپین‌های
+                    تبلیغاتی و ارتقای برند شرکت‌ها.
+                  </p>
+                </div>
+              </li>
+
+              <!-- آیتم 3 -->
+              <li class="timeline-item group">
+                <div class="timeline-marker"></div>
+                <div
+                  class="transition-all duration-300 ease-in-out group-hover:scale-[1.02] group-hover:shadow-lg p-4 rounded-lg"
+                >
+                  <h4
+                    class="text-sm text-gray-400 group-hover:text-purple-400 transition-colors duration-300"
+                  >
+                    سال 1401 تاکنون
+                  </h4>
+                  <span
+                    class="inline-block text-xs px-3 py-1 bg-purple-600 rounded-md mt-1 group-hover:bg-purple-500 transition-all duration-300"
+                    >فعالیت شخصی</span
+                  >
+                  <h3
+                    class="text-xl font-bold mt-2 group-hover:text-white transition-colors duration-300"
+                  >
+                    توسعه پروژه‌های شخصی
+                  </h3>
+                  <p
+                    class="text-gray-400 leading-relaxed mt-2 group-hover:text-gray-100 transition-colors duration-300"
+                  >
+                    توسعه وب‌سایت‌ها و پروژه‌های شخصی با تمرکز بر طراحی رابط
+                    کاربری و تجربه کاربری مدرن.
+                  </p>
+                </div>
+              </li>
+
+              <!-- آیتم 4 -->
+              <li class="timeline-item group">
+                <div class="timeline-marker"></div>
+                <div
+                  class="transition-all duration-300 ease-in-out group-hover:scale-[1.02] group-hover:shadow-lg p-4 rounded-lg"
+                >
+                  <h4
+                    class="text-sm text-gray-400 group-hover:text-purple-400 transition-colors duration-300"
+                  >
+                    سال 1402 تاکنون
+                  </h4>
+                  <span
+                    class="inline-block text-xs px-3 py-1 bg-purple-600 rounded-md mt-1 group-hover:bg-purple-500 transition-all duration-300"
+                    >برنامه نویس وب</span
+                  >
+                  <h3
+                    class="text-xl font-bold mt-2 group-hover:text-white transition-colors duration-300"
+                  >
+                    طراحی و توسعه وب
+                  </h3>
+                  <p
+                    class="text-gray-400 leading-relaxed mt-2 group-hover:text-gray-100 transition-colors duration-300"
+                  >
+                    طراحی و توسعه سایت‌های حرفه‌ای، بهینه‌سازی تجربه کاربری و
+                    پیاده‌سازی پروژه‌های واقعی برای مشتریان.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto flex flex-col justify-center items-center">
+        <!-- عنوان صفحه -->
+        <div
+          class="flex flex-col mx-auto mt-12 md:mt-16 justify-center items-center text-center"
+        >
+          <h2
+            class="text-2xl md:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#C4B7DF] to-[#8750F7]"
+          >
+            مقالات
+          </h2>
+          <p class="text-gray-400 mb-6 md:mb-10 max-w-xl">
+            تلاش برای داشتن اطلاعات کاربردی، به‌روز و جامع در زمینه کاری و
+            مهارت‌های حرفه‌ای
+          </p>
+        </div>
+
+        <!-- Grid مقالات -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 w-full max-w-6xl px-4"
+        >
+          <!-- کارت مقاله اول -->
+          <div
+            class="flex flex-col bg-[#180E22] rounded-[20px] overflow-hidden article-card"
+          >
+            <img
+              src="./assets/images/02ff308eb2ff8d71c5963a87fc731d23.jpeg"
+              alt="رزومه"
+              class="w-full h-56 object-cover"
+              loading="lazy"
+            />
+            <div class="p-6 flex flex-col flex-1">
+              <h2 class="text-lg md:text-xl font-semibold mb-3">
+                چگونه رزومه حرفه‌ای بنویسیم؟
+              </h2>
+              <p class="text-gray-300 text-sm flex-1 mb-6">
+                در این مقاله نکات کلیدی و قوانین نوشتن رزومه را بررسی می‌کنیم تا
+                شانس قبولی شما در مصاحبه‌های کاری بیشتر شود.
+              </p>
+              <div
+                class="flex justify-between items-center text-gray-400 text-sm"
+              >
+                <span
+                  >فروردین 14, 1403
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                    />
+                  </svg>
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- کارت مقاله دوم -->
+          <div
+            class="flex flex-col bg-[#180E22] rounded-[20px] overflow-hidden article-card"
+          >
+            <img
+              src="./assets/images/02ff308eb2ff8d71c5963a87fc731d23.jpeg"
+              alt="طراحی UI/UX"
+              class="w-full h-56 object-cover"
+              loading="lazy"
+            />
+            <div class="p-6 flex flex-col flex-1">
+              <h2 class="text-lg md:text-xl font-semibold mb-3">
+                مهارت‌های ضروری طراحان رابط کاربری
+              </h2>
+              <p class="text-gray-300 text-sm flex-1 mb-6">
+                این مقاله مهم‌ترین مهارت‌هایی که هر طراح UI/UX باید داشته باشد
+                را به شما معرفی می‌کند.
+              </p>
+              <div
+                class="flex justify-between items-center text-gray-400 text-sm"
+              >
+                <span
+                  >اردیبهشت 2, 1403
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                    />
+                  </svg>
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- کارت مقاله سوم -->
+          <div
+            class="flex flex-col bg-[#180E22] rounded-[20px] overflow-hidden article-card"
+          >
+            <img
+              src="./assets/images/02ff308eb2ff8d71c5963a87fc731d23.jpeg"
+              alt="UX"
+              class="w-full h-56 object-cover"
+              loading="lazy"
+            />
+            <div class="p-6 flex flex-col flex-1">
+              <h2 class="text-lg md:text-xl font-semibold mb-3">
+                بهبود تجربه کاربری در وب سایت‌ها
+              </h2>
+              <p class="text-gray-300 text-sm flex-1 mb-6">
+                نکات کاربردی برای بهبود UX سایت شما، شامل طراحی جریان کاربر،
+                سرعت بارگذاری و تعاملات جذاب.
+              </p>
+              <div
+                class="flex justify-between items-center text-gray-400 text-sm"
+              >
+                <span
+                  >خرداد 10, 1403
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-5 h-5 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"
+                    />
+                  </svg>
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-[#0f0715] border-t border-[#2d1f49] mt-20">
+      <div
+        class="max-w-[1180px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 py-10 px-5 text-white"
+      >
+        <!-- لوگو و توضیح -->
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <span
+              class="w-10 h-10 flex items-center justify-center rounded-xl bg-[#8750F7] text-white font-bold text-lg"
+              >H</span
+            >
+            <span class="text-xl font-bold">Hossein</span>
+          </div>
+          <p class="text-gray-400 text-sm leading-6">
+            من حسین هستم، طراح وب و متخصص UI/UX با بیش از ۸ سال تجربه در زمینه
+            طراحی وبسایت، اپلیکیشن و دیجیتال مارکتینگ.
+          </p>
+        </div>
+
+        <!-- لینک‌های سریع -->
+        <div>
+          <h3 class="text-lg font-bold mb-4 text-[#C4B7DF]">لینک‌های سریع</h3>
+          <ul class="flex flex-col gap-2 text-gray-300">
+            <li>
+              <a href="#" class="hover:text-[#8750F7] transition">صفحه اصلی</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#8750F7] transition"
+                >نمونه‌کارها</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#8750F7] transition">خدمات</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#8750F7] transition">تماس با من</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- تماس و شبکه‌ها -->
+        <div>
+          <h3 class="text-lg font-bold mb-4 text-[#C4B7DF]">ارتباط با من</h3>
+          <p class="text-gray-300 text-sm mb-4">
+            ایمیل:
+            <a href="mailto:youremail@gmail.com" class="hover:text-[#8750F7]"
+              >youremail@gmail.com</a
+            >
+          </p>
+          <div class="flex gap-3">
+            <!-- GitHub -->
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center rounded-full border border-[#8750F7] hover:bg-[#8750F7] transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.8-1.5-3.8-1.5-.5-1.2-1.1-1.6-1.1-1.6-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.5 1.1 3.1.8.1-.6.3-1.1.6-1.3-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.2-3.2 0-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 5.6 18 6 18 6c.6 1.6.1 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.3.2.6.8.6 1.6v2.4c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"
+                />
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center rounded-full border border-[#8750F7] hover:bg-[#8750F7] transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.5 3h-17C2.1 3 1 4.1 1 5.5v13C1 19.9 2.1 21 3.5 21h17c1.4 0 2.5-1.1 2.5-2.5v-13C23 4.1 21.9 3 20.5 3zM8 18H5V9h3v9zm-1.5-10.2c-1 0-1.7-.7-1.7-1.6 0-.9.7-1.6 1.7-1.6s1.7.7 1.7 1.6c0 .9-.7 1.6-1.7 1.6zM19 18h-3v-4.5c0-1.1-.4-1.9-1.5-1.9s-1.7.8-1.7 1.9V18h-3V9h3v1.2c.6-.9 1.6-1.4 2.6-1.4 2 0 3.6 1.4 3.6 4.1V18z"
+                />
+              </svg>
+            </a>
+            <!-- Instagram -->
+            <a
+              href="#"
+              class="w-10 h-10 flex items-center justify-center rounded-full border border-[#8750F7] hover:bg-[#8750F7] transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.5.4.6.2 1 .5 1.5 1 .5.5.8.9 1 1.5.2.5.3 1.3.4 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 2-.4 2.5-.2.6-.5 1-1 1.5-.5.5-.9.8-1.5 1-.5.2-1.3.3-2.5.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.2-2.5-.4-.6-.2-1-.5-1.5-1-.5-.5-.8-.9-1-1.5-.2-.5-.3-1.3-.4-2.5C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-2 .4-2.5.2-.6.5-1 1-1.5.5-.5.9-.8 1.5-1 .5-.2 1.3-.3 2.5-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.2 0-3.5 0-4.8.1-1 .1-1.5.2-1.9.3-.5.2-.8.4-1.2.8-.4.4-.6.7-.8 1.2-.1.4-.2.9-.3 1.9-.1 1.3-.1 1.6-.1 4.8s0 3.5.1 4.8c.1 1 .2 1.5.3 1.9.2.5.4.8.8 1.2.4.4.7.6 1.2.8.4.1.9.2 1.9.3 1.3.1 1.6.1 4.8.1s3.5 0 4.8-.1c1-.1 1.5-.2 1.9-.3.5-.2.8-.4 1.2-.8.4-.4.6-.7.8-1.2.1-.4.2-.9.3-1.9.1-1.3.1-1.6.1-4.8s0-3.5-.1-4.8c-.1-1-.2-1.5-.3-1.9-.2-.5-.4-.8-.8-1.2-.4-.4-.7-.6-1.2-.8-.4-.1-.9-.2-1.9-.3-1.3-.1-1.6-.1-4.8-.1z"
+                />
+                <circle cx="12" cy="12" r="3.2" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- کپی‌رایت -->
+      <div
+        class="border-t border-[#2d1f49] text-center py-4 text-gray-400 text-sm"
+      >
+        © 2025 | ساخته شده با ❤️ توسط حسین
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/mine.js" defer></script>
+    <script src="./animishen/aos.js" defer></script>
+
+
+  </body>
+</html>

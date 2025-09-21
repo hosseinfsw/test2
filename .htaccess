@@ -1,0 +1,6 @@
+RewriteEngine On
+
+# اگر فولدر وجود نداشته باشه و فایل با .html وجود داشته باشه، .html اضافه کن
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]

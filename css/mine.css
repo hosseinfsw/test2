@@ -1,0 +1,163 @@
+ * {
+        font-family: YekanBakh, Tahoma, sans-serif;
+        box-sizing: border-box;
+        font-weight: 600;
+        
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #0f0715;
+        color: white;
+        overflow-x: hidden;
+      }
+      ::selection {
+        background-color: #8750f7;
+        color: #fff;
+      }
+
+      /* کارت */
+      .card {
+        transition: transform 0.4s ease, box-shadow 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 500px;
+        height: 400px;
+      }
+      .card:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+      }
+      .card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        background: linear-gradient(
+          120deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
+        transform: skewX(-20deg);
+      }
+      .card:hover::after {
+        left: 150%;
+        transition: left 1s;
+      }
+
+      .overlay {
+        bottom: -100px;
+        transition: bottom 0.4s ease;
+      }
+      .card:hover .overlay {
+        bottom: 15px;
+      }
+
+      .filter-btn {
+        border: none;
+        cursor: pointer;
+        background-image: linear-gradient(90deg, #2d1f49 0%, #8750f7 100%);
+        background-size: 200% auto;
+        transition: all 0.3s ease;
+      }
+      .filter-btn:hover {
+        background-position: right center;
+
+        box-shadow: 0 6px 15px rgba(135, 80, 247, 0.6);
+      }
+      .filter-btn.active {
+        background-image: linear-gradient(135deg, #8750f7, #5e17eb);
+        transform: scale(1.08);
+        box-shadow: 0 8px 20px rgba(135, 80, 247, 0.8);
+      }
+
+      .hide {
+        opacity: 0 !important;
+        transform: scale(0.85);
+        pointer-events: none;
+        display: none;
+      }
+      .show {
+        opacity: 1 !important;
+        transform: scale(1);
+        pointer-events: auto;
+        display: block;
+      }
+      .item {
+        transition: all 0.4s ease;
+      }
+          /* لیست تایم‌لاین */
+    .timeline-list {
+      position: relative;
+      padding-right: 40px; /* فاصله برای خط و دایره‌ها */
+    }
+
+    /* خط یکپارچه پشت تمام آیتم‌ها */
+    .timeline-list::before {
+      content: "";
+      position: absolute;
+      right: 47px; /* وسط دایره‌ها */
+      top: 20px;    /* وسط دایره اول */
+      bottom: 0px; /* وسط دایره آخر */
+      width: 2px;
+      background: #9333ea;
+      z-index: 0;
+    }
+
+    /* دایره‌های هر آیتم */
+    .timeline-marker {
+      position: absolute;
+      right: 0;
+      top: 18px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #9333ea;
+      z-index: 10; /* روی خط باشد */
+    }
+
+    /* هر آیتم فاصله از راست برای متن */
+    .timeline-item {
+      position: relative;
+      padding-right: 32px; 
+    }
+#typewriter {
+  display: inline;
+}
+
+.cursor {
+  display: inline-block;
+  
+
+  animation: blink 0.9s step-end infinite;
+  margin-left: 2px;
+  height: 1em;
+  vertical-align: bottom;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+    /* استایل اختصاصی کارت ها */
+    .article-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0px 16px 39px 0px rgba(219, 0, 255, 0.04);
+    }
+    .article-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 20px 50px 0px rgba(219, 0, 255, 0.1);
+    }
+    img {
+  opacity: 0;
+  filter: blur(10px);
+  transition: all 0.6s ease;
+}
+img.loaded {
+  opacity: 1;
+  filter: blur(0);
+}
